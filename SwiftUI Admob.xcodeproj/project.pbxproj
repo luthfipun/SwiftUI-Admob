@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		A6443B1A260C295600ED783E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B19260C295600ED783E /* ContentView.swift */; };
 		A6443B1C260C295700ED783E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6443B1B260C295700ED783E /* Assets.xcassets */; };
 		A6443B1F260C295700ED783E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6443B1E260C295700ED783E /* Preview Assets.xcassets */; };
+		A6443B29260C2A9600ED783E /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = A6443B28260C2A9600ED783E /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6443B29260C2A9600ED783E /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI Admob";
+			packageProductDependencies = (
+				A6443B28260C2A9600ED783E /* GoogleMobileAds */,
+			);
 			productName = "SwiftUI Admob";
 			productReference = A6443B14260C295600ED783E /* SwiftUI Admob.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = A6443B0B260C295600ED783E;
+			packageReferences = (
+				A6443B27260C2A9600ED783E /* XCRemoteSwiftPackageReference "GoogleMobileAds-SPM" */,
+			);
 			productRefGroup = A6443B15260C295600ED783E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,6 +209,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -255,6 +264,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -277,6 +287,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.luthfipun.SwiftUI-Admob";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +310,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.luthfipun.SwiftUI-Admob";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6443B27260C2A9600ED783E /* XCRemoteSwiftPackageReference "GoogleMobileAds-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Koze/GoogleMobileAds-SPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6443B28260C2A9600ED783E /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6443B27260C2A9600ED783E /* XCRemoteSwiftPackageReference "GoogleMobileAds-SPM" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6443B0C260C295600ED783E /* Project object */;
 }
