@@ -12,6 +12,16 @@
 		A6443B1C260C295700ED783E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6443B1B260C295700ED783E /* Assets.xcassets */; };
 		A6443B1F260C295700ED783E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6443B1E260C295700ED783E /* Preview Assets.xcassets */; };
 		A6443B29260C2A9600ED783E /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = A6443B28260C2A9600ED783E /* GoogleMobileAds */; };
+		A6443B30260C61EC00ED783E /* AdUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B2F260C61EC00ED783E /* AdUnit.swift */; };
+		A6443B34260C634A00ED783E /* AdBannerSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B33260C634A00ED783E /* AdBannerSize.swift */; };
+		A6443B37260C645600ED783E /* AdStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B36260C645600ED783E /* AdStatus.swift */; };
+		A6443B3C260C64DE00ED783E /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B3B260C64DE00ED783E /* BannerViewController.swift */; };
+		A6443B40260C6AF300ED783E /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B3F260C6AF300ED783E /* BannerView.swift */; };
+		A6443B43260C86A800ED783E /* InterstitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B42260C86A800ED783E /* InterstitialView.swift */; };
+		A6443B4A260CB12000ED783E /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B49260CB12000ED783E /* InterstitialViewController.swift */; };
+		A6443B4D260D8B5900ED783E /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B4C260D8B5900ED783E /* NativeViewController.swift */; };
+		A6443B50260DC96A00ED783E /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B4F260DC96A00ED783E /* NativeView.swift */; };
+		A6443B53260E096E00ED783E /* NativeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6443B52260E096E00ED783E /* NativeViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,16 @@
 		A6443B1B260C295700ED783E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6443B1E260C295700ED783E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6443B20260C295700ED783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6443B2F260C61EC00ED783E /* AdUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdUnit.swift; sourceTree = "<group>"; };
+		A6443B33260C634A00ED783E /* AdBannerSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerSize.swift; sourceTree = "<group>"; };
+		A6443B36260C645600ED783E /* AdStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdStatus.swift; sourceTree = "<group>"; };
+		A6443B3B260C64DE00ED783E /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		A6443B3F260C6AF300ED783E /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		A6443B42260C86A800ED783E /* InterstitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialView.swift; sourceTree = "<group>"; };
+		A6443B49260CB12000ED783E /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		A6443B4C260D8B5900ED783E /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		A6443B4F260DC96A00ED783E /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
+		A6443B52260E096E00ED783E /* NativeViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,9 @@
 		A6443B16260C295600ED783E /* SwiftUI Admob */ = {
 			isa = PBXGroup;
 			children = (
+				A6443B3E260C6AE100ED783E /* View */,
+				A6443B39260C64C000ED783E /* Controller */,
+				A6443B2E260C61C800ED783E /* Constant */,
 				A6443B17260C295600ED783E /* SwiftUI_AdmobApp.swift */,
 				A6443B19260C295600ED783E /* ContentView.swift */,
 				A6443B1B260C295700ED783E /* Assets.xcassets */,
@@ -69,6 +92,37 @@
 				A6443B1E260C295700ED783E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6443B2E260C61C800ED783E /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A6443B2F260C61EC00ED783E /* AdUnit.swift */,
+				A6443B33260C634A00ED783E /* AdBannerSize.swift */,
+				A6443B36260C645600ED783E /* AdStatus.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A6443B39260C64C000ED783E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6443B3B260C64DE00ED783E /* BannerViewController.swift */,
+				A6443B49260CB12000ED783E /* InterstitialViewController.swift */,
+				A6443B4C260D8B5900ED783E /* NativeViewController.swift */,
+				A6443B52260E096E00ED783E /* NativeViewController2.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6443B3E260C6AE100ED783E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6443B3F260C6AF300ED783E /* BannerView.swift */,
+				A6443B42260C86A800ED783E /* InterstitialView.swift */,
+				A6443B4F260DC96A00ED783E /* NativeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6443B43260C86A800ED783E /* InterstitialView.swift in Sources */,
+				A6443B40260C6AF300ED783E /* BannerView.swift in Sources */,
+				A6443B53260E096E00ED783E /* NativeViewController2.swift in Sources */,
+				A6443B4A260CB12000ED783E /* InterstitialViewController.swift in Sources */,
+				A6443B3C260C64DE00ED783E /* BannerViewController.swift in Sources */,
 				A6443B1A260C295600ED783E /* ContentView.swift in Sources */,
+				A6443B4D260D8B5900ED783E /* NativeViewController.swift in Sources */,
+				A6443B37260C645600ED783E /* AdStatus.swift in Sources */,
 				A6443B18260C295600ED783E /* SwiftUI_AdmobApp.swift in Sources */,
+				A6443B30260C61EC00ED783E /* AdUnit.swift in Sources */,
+				A6443B34260C634A00ED783E /* AdBannerSize.swift in Sources */,
+				A6443B50260DC96A00ED783E /* NativeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

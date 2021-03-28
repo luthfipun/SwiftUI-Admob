@@ -10,6 +10,9 @@ import GoogleMobileAds
 
 @main
 struct SwiftUI_AdmobApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
